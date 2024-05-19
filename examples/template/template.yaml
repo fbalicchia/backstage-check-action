@@ -47,6 +47,11 @@ spec:
         values:
           name: ${{ parameters.name }}
 
+    - id: firstaction
+      name: acme example
+      action: acme:example
+      input:
+        myParameter: "test"
     # This step publishes the contents of the working directory to GitHub.
     - id: publish
       name: Publish
